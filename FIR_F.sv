@@ -19,10 +19,7 @@ module FIR_F
   logic [inout_width-1:0] MultResult2;
   logic [inout_width-1:0] MultResult3;
 
-  logic [inout_width*2-1:0] Sum;
-
-  assign Sum = MultResult1 + MultResult2 + MultResult3;
-  assign OutputData = Sum;
+  assign OutputData = MultResult1 + MultResult2 + MultResult3;
 
   always_ff @(posedge Clk or negedge Rst) begin
     if (!Rst) begin
