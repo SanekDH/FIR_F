@@ -10,10 +10,10 @@ module tb_FIR_F();
   
   FIR_F #(.inout_width(inout_width))
   DUT (
-    .InputData (InputData),
+    .InputData(InputData),
     .OutputData(OutputData),
-    .Clk       (Clk),
-    .Rst       (Rst)
+    .Clk(Clk),
+    .Rst(Rst)
   );
   
   initial begin
