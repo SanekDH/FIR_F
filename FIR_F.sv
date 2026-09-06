@@ -21,7 +21,7 @@ module FIR_F
 
   assign OutputData = MultResult1 + MultResult2 + MultResult3;
 
-  always_ff @(posedge Clk or negedge Rst) begin
+  always_ff @(posedge Clk) begin
     if (!Rst) begin
       delay1 <= 0;
       delay2 <= 0;
@@ -31,7 +31,7 @@ module FIR_F
     end
   end 
 
-  always_ff @(posedge Clk or negedge Rst) begin 
+  always_ff @(posedge Clk) begin 
     if (!Rst) begin
       MultResult1 <= 0;
       MultResult2 <= 0;
