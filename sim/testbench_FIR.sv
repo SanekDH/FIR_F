@@ -9,7 +9,7 @@ module testbench_FIR();
 
     parameter int I_WIDTH = 16;
     parameter int COEF_WIDTH = 16;
-    parameter int COEF_SUM = 27;
+    parameter int COEF_SUM = 29;
     parameter int MULT_WIDTH = I_WIDTH + COEF_WIDTH;
     parameter int O_WIDTH  = MULT_WIDTH + COEF_SUM - 1;
 
@@ -87,33 +87,35 @@ module testbench_FIR();
       .Rst(Rst),
       .i_data(sin16),
       .coefs({
-          -32'd510,
-            -32'd520,
-            -32'd625,
-            -32'd575,
-            -32'd287,
-             32'd306,
-             32'd1232,
-             32'd2467,
-             32'd3927,
-             32'd5477,
-             32'd6948,
-             32'd8162,
-             32'd8962,
-             32'd9241,
-             32'd8962,
-             32'd8162,
-             32'd6948,
-             32'd5477,
-             32'd3927,
-             32'd2467,
-             32'd1232,
-             32'd306,
-            -32'd287,
-            -32'd575,
-            -32'd625,
-            -32'd520,
-            -32'd510
+          32'd367,
+             32'd623,
+             32'd882,
+             32'd924,
+             32'd614,
+            -32'd57,
+            -32'd918,
+            -32'd1632,
+            -32'd1800,
+            -32'd1126,
+             32'd438,
+             32'd2620,
+             32'd4880,
+             32'd6581,
+             32'd7212,
+             32'd6581,
+             32'd4880,
+             32'd2620,
+             32'd438,
+            -32'd1126,
+            -32'd1800,
+            -32'd1632,
+            -32'd918,
+            -32'd57,
+             32'd614,
+             32'd924,
+             32'd882,
+             32'd623,
+             32'd367
         }),
       .o_data(o_Data)
     );

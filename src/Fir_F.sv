@@ -4,7 +4,7 @@ module Fir_F
 #(
   parameter int I_WIDTH = 16,
   parameter int COEF_WIDTH = 16,
-  parameter int COEF_SUM = 10,
+  parameter int COEF_SUM = 29,
   parameter int MULT_WIDTH = I_WIDTH + COEF_WIDTH, 
   parameter int O_WIDTH = MULT_WIDTH + COEF_SUM - 1
 )
